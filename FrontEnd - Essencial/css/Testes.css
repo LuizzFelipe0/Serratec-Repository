@@ -1,0 +1,158 @@
+*{
+    background-color: indigo;
+}
+h1{
+    text-align: center;
+    text-decoration:underline aliceblue;
+    color: orangered;
+    font-size: 62%;
+    font-family: 'Gill Sans MT';
+}
+h2{
+    text-align: center;
+    color: orangered;
+    font-family: 'Gill Sans MT';
+}
+  .classe1:link{
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .classe1:visited {
+    color: aliceblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .classe1:hover{
+    color: orangered;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .classe1:active {
+    color: rgb(30, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .classe2:link, .classe2:visited {
+    background-color: orangered;
+    color: aliceblue;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .classe2:hover, .classe2:active {
+    background-color: orange;
+  }
+ p{
+   color: aliceblue;
+ }
+ table, tr , td{
+   color: aliceblue;
+   border-radius: 4px;
+   
+
+ }
+ table, tr, th, td {
+   border:2px solid aliceblue;
+   border-radius: 8px;
+ }
+ table{
+   background-color: orangered;
+ }
+ td, th{
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+  div > p{
+    background-color:black;
+    color:aliceblue;
+    padding:14px;
+    margin: 14px;
+    text-align: left;
+    
+  }
+  div > h2{
+    background-color: black;
+    color: blueviolet;
+    text-align: left;
+    padding:14px;
+
+  }
+  div{
+    background-color: black;
+
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+   }
+   li {
+     list-style-type: none;
+     background-color: orangered;
+     float: left;
+     font-family: Arial;
+   }
+
+   li> a {
+     display: block;
+     color: aliceblue;
+     text-align: center;
+     padding:  14px 16px;
+     text-decoration: none;
+     background-color: black;
+   }
+
+   li a:hover {
+     background-color:orangered;
+   }
+
+   .seriesbtn {
+    background-color: aliceblue;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+  }
+  
+  .series {
+    position: relative;
+    display: inline-block;
+    font-family: Arial;
+
+  }
+  
+  .series-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    font-family: Arial;
+
+  }
+  
+  .series-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .series-content a:hover {background-color: aliceblue}
+  
+  .series:hover .series-content {
+    display: block;
+  }
+  
+  .series:hover .seriesbtn {
+    background-color: blue;
+  }
+  
+  

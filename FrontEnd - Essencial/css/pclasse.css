@@ -1,0 +1,9 @@
+.meu-link:link{
+    color: orangered;
+}
+.meu-link:visited{
+    color: blueviolet;
+}
+.meu-link:hover{
+    color: yellow;
+}

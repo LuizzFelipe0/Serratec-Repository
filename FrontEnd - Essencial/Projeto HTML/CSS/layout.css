@@ -1,0 +1,35 @@
+.layout-cabecalho {
+    height: 80px;
+    border-bottom: 1px solid black;
+    background-color:darkorchid;
+}
+
+.layout-cabecalho-home{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: auto;
+}
+
+.layout-planos {
+    padding: 80px 0;
+}
+.layout-principal{
+    padding: 80px;
+    background-color: lightslategray;
+}
+
+
+.layout-rodape{
+    padding:10px 0;
+    background-color: darkorchid;
+
+    color: aliceblue;
+    text-align: left;
+}
+.layout-assinatura{
+    padding: 160px;
+    background-color: #484848;
+}
+

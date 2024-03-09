@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document4</title>
+
+</head>
+<body>
+    <script>
+
+        var nomes=[];
+        var cursos=["Java","PHP","Python","C#"];
+
+        nomes.push("Luiz");
+        nomes.push("Felipe");
+        nomes.push("Jonas");
+
+        document.write(nomes[0]);
+        document.write(nomes[5]);
+
+      /*  for(let index=0;index <nomes.length;index++){
+            document.write(nomes[index]);
+        }
+
+        var vetor= new Array(10);
+
+        for (let count = 0; count < vetor.length; count++) {
+            vetor[count] = arrcount*2;
+           document.write(vetor[count]+"<br>");
+        }
+*/
+        
+        try{
+            var preco
+=prompt("Digite o Preço:");
+            if(preco<0){
+                throw new Error("Preço Inválido!");
+            }
+        } catch (e){
+            document.write("<br>Erro:"+e.message+"<br>Preço:"+ preco);
+            preco=0;
+        }finally{
+            document.write("<br>Preço:"+preco);
+        }
+
+
+    </script>
+    
+</body>
+</html>

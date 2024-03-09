@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.app {
+    background-color: lightgrey;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 0px;
+
+}
+
+article {
+    height: 186px;
+    width: 156px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    text-align: left;
+    margin: 0px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-top: 20%;
+
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
+    margin-bottom: -10px;
+}
+
+img {
+    width: 56px;
+    float: left;
+    height: 52px;
+
+
+
+}

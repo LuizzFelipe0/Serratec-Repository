@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fromulário de Cadastro</title>
+    <link rel="stylesheet" href="/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/componentes.css">
+</head>
+<body>
+    <header class="layout-cabecalho layout-cabecalho--home">
+        <div class="container">
+            <img src="https://cdn.discordapp.com/attachments/953002405820264468/972248705585541160/cabecalho.png" width="80" height="80" alt="cabeca">
+            <nav class="navTop">
+                <a class="navHome" href="./index.html">Home</a>
+                <a class="navSobre" href="">Sobre</a>
+                <a class="navContatos" href="">Contatos</a>
+                <!-- <a class="navContatos" href="">teste</a> -->
+            </nav>
+        </header>
+    
+        <main class="layout-assinatura">
+    
+            <div class="container">
+                <h1 class="titulo-formulario">Assinatura do Plano</h1>
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="my-3 col-sm-12 col-md-12">
+                            <label class="form-label" for="nome">Nome:</label>
+                            <input placeholder="Nome" id="nome" class="form-control" type="text" name="nome"
+                                required="true">
+                        </div>
+                        <div class="row">
+                            <div class="my-3 col-sm-12 col-md-12">
+                                <label class="form-label" for="email">Email:</label>
+                                <input placeholder="example@email.com" id="email" class="form-control" type="email"
+                                    name="email">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="my-3 col-sm-3 col-md-3">
+                                <label for="telefone" class="form-label">Telefone:</label>
+                                <input class="form-control" id="telefone" type="text" name="telefone">
+                            </div>
+                            <div class="my-3 col-sm-3 col-md-3">
+                                <label for="data-nascimento" class="form-label">Data de Nascimento:</label>
+                                <input class="form-label" id="data-nascimento" type="date" name="data-nascimento">
+                            </div>
+                            <div class="my-3 col-sm-3 col-md-3">
+                                <label for="tipo-plano" class="form-label">Tipo de plano:</label>
+                                <select class="form-select" name="tipo-plano" id="tipo-plano">
+                                    <option value="B">Básico</option>
+                                    <option value="I">Intermediário</option>
+                                    <option value="A">Avançado</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="my-3 col-sm-3 col-md-3">
+                            <label class="form-label">Serviço adicional:</label>
+                            <div>
+                                <div>
+                                    <input id="tipo-servico" name="tipo-servico" type="checkbox" value="netflix">
+                                    <label id="tipo-servico">Netflix</label>
+                                </div>
+                                <div>
+                                    <input id="tipo-servico" name="tipo-servico" type="checkbox" value="prime">
+                                    <label id="tipo-servico">Amazon Prime</label>
+                                </div>
+                                <div>
+                                    <input id="tipo-servico" name="tipo-servico" type="checkbox" value="globo">
+                                    <label id="tipo-servico">Globo Play</label>
+                                </div>
+                                <div>
+                                    <input id="tipo-servico" name="tipo-servico" type="checkbox" value="spotify">
+                                    <label id="tipo-servico">Spotify</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="my-3 col-sm-6 col-md-6"></div>
+                        <label class="form-label">Avaliação</label>
+                    </div>
+                    <input type="range" list="avaliacao">
+                    <datalist id="avaliacao">
+                        <option value="0" label="0%"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100"></option>
+    
+                    </datalist>
+                    <div>
+                        <button value="enviar" class="my-3 btn btn-dark">Enviar</button>
+                        <input type="reset" value="limpar" class="my-3 btn btn-dark"> 
+                    </div>
+                </form>
+            </div>
+    
+        </main>
+    
+        <footer class="rodape">&reg;
+            LUWIZ LTDA. Todos os direitos reservados - 2022
+        </footer>
+    
+    </body>
+    
+    </html>

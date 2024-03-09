@@ -1,0 +1,20 @@
+.cor1{
+    background-color: blueviolet;
+    color: orange;
+
+}
+
+.cor2{
+    background-color:deeppink;
+    color: rgb(0, 0, 0);
+}
+
+.cor3{
+    background-color:limegreen;
+    color: yellow;
+    
+}
+dl{
+    font-style: italic;
+    color: indigo;
+}

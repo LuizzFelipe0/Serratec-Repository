@@ -1,0 +1,10 @@
+body{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: left;
+    color: aqua;
+    background-color: blue;
+}
+img{
+    float: right; 
+}

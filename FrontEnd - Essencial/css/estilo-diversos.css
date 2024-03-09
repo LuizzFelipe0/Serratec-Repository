@@ -1,0 +1,24 @@
+#titulo{
+    background-color: blueviolet;
+}
+.destacar{
+    background-color: orangered;
+}
+.missao{
+    color: lightseagreen;
+    font-weight: bold;
+    font-style: italic;
+}
+article strong{
+    color: deepskyblue;
+}
+article .missao strong{
+    color: blueviolet;
+}
+article > .texto > strong {
+    font-family:Impact;
+}
+
+article > .destacar > strong {
+    color: yellow;
+}

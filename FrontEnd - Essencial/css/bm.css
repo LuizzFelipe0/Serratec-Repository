@@ -1,0 +1,29 @@
+body{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 24px;
+}
+.texto1,.texto2,.texto3{
+    text-align: justify;
+    width: 600px;
+    background-color: crimson;
+}
+p{
+    margin: 10px;
+}
+.texto1{
+    box-sizing: border-box;
+    border:  20px solid goldenrod;
+    padding: 10px;
+}
+.texto2{
+    box-sizing: border-box;
+    border:  20px solid salmon;
+    padding: 10px;
+
+}
+
+.texto3{
+    color: aliceblue;
+    background-color: black;
+    height:30px;
+}

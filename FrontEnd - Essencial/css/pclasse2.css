@@ -1,0 +1,19 @@
+.Disciplinas{
+    font-family: 'Times New Roman';
+    font-size: 18;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.Disciplinas li{
+    color: orangered;
+    border-bottom: 1px solid black;
+}
+.Disciplinas :last-child{
+    color: red;
+    border: none;
+
+}
+.Disciplinas :first-child{
+    color: green;
+}

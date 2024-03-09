@@ -1,0 +1,9 @@
+.container {
+    border: 1px solid black;
+    background-color: indigo;
+    text-align: center;
+    
+}
+p{
+    color: aliceblue;
+}

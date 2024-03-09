@@ -1,0 +1,30 @@
+body{
+    font-size: 24px;
+    font-family: Arial;
+}
+.empresa, .area{
+    display: block;
+    background-color: black;
+    height: 100px ;
+    width: 200px ;
+}
+.area{
+    display: inline;
+    background-color: crimson;
+}
+.computador, .roteador{
+    display: inline;
+    background-color: lime;
+}
+.placadevideo{
+    background-color: magenta;
+}
+.roteador{
+    background-color: yellow;
+}
+.celulares, .placadevideo{
+    display: inline-block;
+    background-color: orangered;
+    height: 100px;
+    width: 200px;
+}

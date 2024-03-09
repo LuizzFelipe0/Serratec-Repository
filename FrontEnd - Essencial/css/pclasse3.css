@@ -1,0 +1,20 @@
+.Conteúdo{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+}
+.Conteúdo span{
+    color:deeppink;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+/* odd = LINHAS PARES 
+ even = LINHAS ÍMPARES*/
+.Conteúdo span:nth-child(odd){
+
+    background-color: aqua;
+}

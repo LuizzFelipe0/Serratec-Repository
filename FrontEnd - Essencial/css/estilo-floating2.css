@@ -1,0 +1,47 @@
+body{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+h1::before{
+    content: "HTML - ";
+}
+h1::after{
+    content: " Estudando as Tags Básicas";
+}
+article{
+    background-color: crimson;
+}
+
+article p::first-letter{
+    font-size: 50px;
+    color: crimson;
+}
+
+.coluna1, .coluna2{
+    background-color: gold;
+    float: left;
+    width: 48%;
+    text-align: justify;
+}
+.coluna1{
+    float: left;
+    width: 48%;
+}
+.coluna2{
+    float: right;
+
+}
+div{
+    text-align: center;
+    background-color: purple;
+    text-decoration: dotted;
+    clear: both;
+}
+div p{
+    color: aliceblue;
+}

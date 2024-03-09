@@ -1,0 +1,33 @@
+masculinas:
+
+https://shopee.com.br/Camiseta-Preta-Não-Amassa-Não-Desbota-i.379125689.10705316789
+
+https://produto.mercadolivre.com.br/MLB-1163901408-camiseta-masculina-camisa-longline-long-line-floral-fashion-_JM
+
+https://www.americanas.com.br/produto/1725864498?cor=Amarela&tamanho=GG
+
+femininas:
+
+https://www.mindsup.com.br/camiseta-circulo-estrelas
+
+https://www.rs1.com.br/camiseta-feminina-angle-goodbye-salvia/p
+
+https://www.amazon.com.br/Camiseta-feminina-Sinfu-divertida-espaguete/dp/B07VRZ9223
+
+acessorios:
+
+https://www.magazineluiza.com.br/pulseiras-masculinas-couro-sao-bento-kit-c-03-colar-brasao-fe-granado-acessorios/p/aab7b40k1c/md/pueb/
+
+https://www.magazineluiza.com.br/colar-coracao-folheado-a-ouro-corrente-bijuteria-dourada-griseus/p/kbkjg3dg2k/md/clar/
+
+https://www.arezzo.com.br/sapatos/sandalias/sandalia-off-white-tiras-cordao-salto-bloco/p/1181100090003U
+
+
+
+COLORS =
+rosa: #FF66C4
+verde: #7ED957
+bege: #FFDEAD
+
+            <img src="https://cdn.discordapp.com/attachments/953010656876068924/973749039478767647/Ltda._Company.png" width="100" height="100" style="-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" >
+

@@ -1,0 +1,14 @@
+*{
+    font-size: 20px;
+}
+
+body{
+    background-color: purple;
+    background-image: url(img/wrench.png);
+}
+p{
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
+}

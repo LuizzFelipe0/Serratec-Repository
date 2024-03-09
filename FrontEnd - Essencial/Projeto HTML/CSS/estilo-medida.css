@@ -1,0 +1,26 @@
+body{
+    font-size: 24px;
+}
+
+
+.texto{
+    font-size: 2em;
+}
+.texto > span{
+    font-size: 0.5em;
+}
+/* Herda direto do primeiro pai da Hierarquia 0.8*16px= 12.80px */
+.exemplo{
+    font-size: 0.8rem;
+}
+.teste{
+    font-size: 48px;
+}
+
+h1{
+    color: crimson;
+    font-size: 96px;
+}
+#titulo{
+    font-size: 10px;
+}
