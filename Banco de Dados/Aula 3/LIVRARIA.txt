@@ -1,0 +1,60 @@
+
+/* Lógico_1: */
+
+CREATE TABLE Livro (
+    isbn varchar(10) PRIMARY KEY,
+    autor varchar(40),
+    quantidade_estoque smallint,
+    descricao varchar(30),
+    preco numeric,
+    fk_Editora_cnpj varchar(14)
+);
+
+CREATE TABLE Editora (
+    cnpj varchar(14) PRIMARY KEY,
+    nome varchar(30),
+    telefone varchar(11),
+    gerente varchar(30)
+);
+
+CREATE TABLE Cliente (
+    codigo_cliente int PRIMARY KEY,
+    nome varchar(30),
+    telefone varchar(11),
+    cpf varchar(11),
+    cnpj varchar(14),
+    razao_social varchar(30),
+    tipo_cliente char
+);
+
+CREATE TABLE Compra (
+    numero_nota int PRIMARY KEY,
+    data_compra date,
+    fk_Cliente_codigo_cliente int
+);
+
+CREATE TABLE Itens_Compra_Comprado (
+    valor_vendido numeric,
+    desconto numeric,
+    quantidade smallint,
+    fk_Livro_isbn varchar(10),
+    fk_Compra_numero_nota int
+);
+ 
+ALTER TABLE Livro ADD CONSTRAINT FK_Livro_2
+    FOREIGN KEY (fk_Editora_cnpj)
+    REFERENCES Editora (cnpj)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Compra ADD CONSTRAINT FK_Compra_2
+    FOREIGN KEY (fk_Cliente_codigo_cliente)
+    REFERENCES Cliente (codigo_cliente)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Itens_Compra_Comprado ADD CONSTRAINT FK_Itens_Compra_Comprado_1
+    FOREIGN KEY (fk_Livro_isbn)
+    REFERENCES Livro (isbn);
+ 
+ALTER TABLE Itens_Compra_Comprado ADD CONSTRAINT FK_Itens_Compra_Comprado_2
+    FOREIGN KEY (fk_Compra_numero_nota)
+    REFERENCES Compra (numero_nota);

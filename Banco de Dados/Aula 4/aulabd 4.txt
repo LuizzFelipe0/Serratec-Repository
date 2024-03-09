@@ -1,0 +1,48 @@
+Database aulabd
+
+create table time(cod_time serial primary key, nome varchar(50));
+insert into time (nome) values('Flamengo');
+insert into time (nome) values('Vasco');
+insert into time (nome) values('Botafogo');
+insert into time (nome) values('Fluminense');
+insert into time (nome) values('Serrano')
+
+
+create table atleta(cod_atleta serial primary key,
+nome varchar(50),idade int,cod_time int, 
+foreign key (cod_time) references time(cod_time) on update cascade on delete cascade)
+
+-------------------------------------------------------------------------------------
+
+select a.nome, a.idade, t.nome from atleta a, time t
+where a.cod_time = t.cod_time and a.cod_time = 1 order by a.nome
+
+select * from atleta where idade > (
+select round(avg(idade),2) as idade_media from atleta);
+
+select nome, min (idade) as idade from atleta as a
+where cod_time = 1
+group by nome 
+having min(idade) >= 18 order by idade;
+
+-------------------------------------------------------
+
+//SOMAR Nº TIME
+
+select count(cod_time) from time;
+
+-------------------------------------------------------
+
+// CRIAR VIEW
+
+create view view_juncao_time_atleta as (
+select a.nome, a.idade, t.cod_time  from time t, atleta a
+where t.cod_time = a.cod_time
+);
+
+
+select * from view_juncao_time_atleta 
+
+-------------------------------------------------------
+
+//

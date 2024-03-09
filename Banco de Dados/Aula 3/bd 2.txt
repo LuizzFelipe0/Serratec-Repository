@@ -1,0 +1,84 @@
+BANCO DE DADOS 2
+
+create table cliente (codigo_cliente int primary key, 
+			          nome varchar(40),
+			          telefone varchar(11),
+			          email varchar(50))
+
+insert into cliente (codigo_cliente,nome,telefone,email)
+	values (1,'Luiz Felipe','2345678','luizin@gmail.com'),
+		   (2,'Felipe','1340187','felipe@gmail.com'),
+		   (3, 'João','777890','joaofreitas@outlook.com')
+
+alter table cliente add column celular varchar(11) --> |DEFINIÇÃO DE NOVOS DADOS|
+
+alter table cliente drop column telefone; --> |APAGA TODA A TABELA|
+
+alter table cliente alter column nome type varchar(60);	--> |ALTERA A TABELA|
+
+create table produto (codigo_produto int primary key,
+					  nome varchar(40) not null,
+					descricao text,
+					preco numeric check (preco > 0) not null default 0,
+					qtd_estoque smallint default 0);	
+
+create table departamento (codigo_departamento int primary key,
+							nome varchar(30));
+
+create table funcionario(codigo_funcionario int primary key,
+ 						    nome varchar(30)not null,
+ 						    telefone varchar(11),
+ 						    email varchar(30),
+ 						    codigo_departamento int,
+ 						    foreign key(codigo_departamento)
+ 						    references departamento(codigo_departamento));
+drop table ... --> |APAGA TUDO MEU FI|
+
+create schema aula; --> |CRIA ESQUEMA NOVO|
+
+create sequence aula.seq_id_cliente;
+
+create table if not exists aula.cliente        (
+						codigo_cliente int primary key
+						default nextval('seq_id_cliente'),
+						nome varchar(40),
+						telefone varchar(11),
+						email varchar(30));
+
+insert into aula.cliente (nome, telefone, email)
+				values('Roni','23434','roni@hotmail.com'),
+					  ('Ana','23234','ana@hotmail.com'),
+					  ('Maria','21434','maria@hotmail.com')
+
+create table aula.categoria(codigo_categoria serial primary key,
+						descricao varchar(30)); --> |CRIA SEQUÊNCIA E TABELA|
+
+insert into aula.categoria(descricao)
+					values('Eletrônicos'),
+					('Alimentos'),
+					('Perfumaria'),
+					('Jogos'),
+					('Farmácia');
+
+create table aula.produto (codigo_produto serial primary key,
+					nome varchar (40) not null,
+					descrição text,
+					preço numeric check (preço > 0) not null default 0,
+					quantidade_estoque smallint default 0,
+					codigo_categoria int,
+					foreign key(codigo_categoria) 
+					references aula.categoria(codigo_categoria));
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
